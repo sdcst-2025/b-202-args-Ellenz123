@@ -9,6 +9,13 @@ assert addNumbers(2,5,6,10,12,20) == 55
 ```
 """
 
+def addNumbers(*args):
+    total=0
+    for i in args:
+        total+=i
+    return total
+
 
 assert addNumbers(1,2,3,4,5) == 15
 assert addNumbers(2,5,6,10,12,20) == 55
+print("All tests passed.")
